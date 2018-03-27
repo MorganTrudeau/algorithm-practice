@@ -1,0 +1,8 @@
+Algorithm.iml
+app/app.iml
+app/build/
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+gradle/
