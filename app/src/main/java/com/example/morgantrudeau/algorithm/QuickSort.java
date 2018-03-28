@@ -22,7 +22,6 @@ public class QuickSort {
     }
 
     private static int partition(int[] array, int left, int right, int pivot) {
-        /** Following two ints used only for visualization in console */
         int leftWall = left;
         int rightWall = right;
 
@@ -36,8 +35,9 @@ public class QuickSort {
                 right--;
             }
 
+            printArray(array, left, right, leftWall, rightWall, pivot);
+
             if(left <= right) {
-                printArray(array, left, right, leftWall, rightWall, pivot);
                 swap(array, left, right);
                 printArray(array, left, right, leftWall, rightWall, pivot);
                 left++;
